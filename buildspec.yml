@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+    pre_build:
+        commands:
+            - echo "Running bootstrap script"
+            - ./bootstrap.sh
+            - ./configure --datadir=$DATA_DIRECTORY
+    build:
+        commands:
+            - echo "Running make"
+            - make
+            - echo "Running make install"
+            - sudo make install
+            - sudo ldconfig
