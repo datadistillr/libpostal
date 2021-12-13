@@ -12,4 +12,4 @@ phases:
             - make
             - echo "Running make install"
             - make install
-            - sudo ldconfig
+            - ldconfig
