@@ -11,5 +11,5 @@ phases:
             - echo "Running make"
             - make
             - echo "Running make install"
-            - sudo make install
+            - make install
             - sudo ldconfig
