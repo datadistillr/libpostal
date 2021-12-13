@@ -13,3 +13,8 @@ phases:
             - echo "Running make install"
             - make install
             - ldconfig
+            
+artifacts:
+    files:
+        - '**/*'
+    base-directory: $DATA_DIRECTORY
